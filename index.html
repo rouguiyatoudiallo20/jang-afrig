@@ -16,59 +16,33 @@ rel="stylesheet">
 <script src="script.js" defer></script>
 </head>
 <body>
-<header >
-<h1>Jàng Afrig </h1>
-<p>Apprendre l'Afrique , un pays à la fois </p>
-</header >
-<nav>
-<a href="index.html">Accueil </a> 
-<a href="quiz.html">Jouer </a> 
-<a href="scores.html">Mes Scores </a> 
-<a href="apropos.html">À propos </a>
-</nav>
+<header><h1>Jàng Afrig</h1></header>
 <main>
-<section >
-<h2>Bienvenue </h2>
-<p>
-Bienvenue sur <strong >Jàng Afrig </strong >, un quiz
-géographique sur les
-<strong >54 pays africains </strong >. Choisissez un mode de
-jeu et battez
-votre meilleur score !
-</p>
-</section >
-<section >
-<h2>Les modes de jeu </h2>
-<div class="modes -grille">
-<div class="carte -mode carte -jaune">
-<h3>Capitales </h3>
-<p>« Quelle est la capitale du Mali ? »</p>
+<!-- ÉCRAN 1 : ACCUEIL -->
+<section id="accueil">
+<p>Teste tes connaissances sur les capitales africaines !</p>
+<label for="pseudo">Ton pseudo :</label>
+<input type="text" id="pseudo" placeholder="Ex : Aminata">
+<button id="btn-commencer">Mode Capitales</button>
+</section>
+<!-- ÉCRAN 2 : QUIZ -->
+<section id="quiz" class="cachee">
+<p id="progression">Question 1 / 10</p>
+<h2 id="enonce">Énoncé de la question</h2>
+<div id="reponses">
+<button class="reponse">Réponse A</button>
+<button class="reponse">Réponse B</button>
+<button class="reponse">Réponse C</button>
+<button class="reponse">Réponse D</button>
 </div>
-<div class="carte -mode carte -rouge">
-<h3>Drapeaux </h3>
-<p>« À quel pays appartient ce drapeau ? »</p>
-</div>
-<div class="carte -mode carte -vert">
-<h3>Langues </h3>
-<p>« Dans quel pays parle -t-on le swahili ? »</p>
-</div>
-<div class="carte -mode carte -jaune">
-<h3>Voisins </h3>
-<p>« Combien de voisins a l'Algérie ? »</p>
-</div>
-<div class="carte -mode carte -rouge">
-<h3>Chrono </h3>
-<p>Maximum de bonnes réponses en 60 secondes </p>
-</div>
-</div>
-</section >
+</section>
+<!-- ÉCRAN 3 : RÉSULTAT -->
+<section id="resultat" class="cachee">
+<h2>Quiz terminé !</h2>
+<p id="score-final">Ton score</p>
+<button id="btn-rejouer">Rejouer</button>
+</section>
 </main>
-<footer >
-<p>
-&copy; 2025--2026 Jàng Afrig --- Projet pédagogique L1
-DUT1-Info, ESP/UCAD.
-<a href="apropos.html">En savoir plus </a>.
-</p>
-</footer >
+</body>
 </body>
 </html>
